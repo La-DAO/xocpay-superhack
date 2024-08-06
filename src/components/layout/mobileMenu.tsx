@@ -26,7 +26,7 @@ export default function MobileMenu({ menuItems, pathname }: MobileMenuProps) {
           <span className="sr-only">Toggle navigation menu</span>
         </button>
       </SheetTrigger>
-      <SheetContent side="right" className="bg-purple-background">
+      <SheetContent side="right" className="bg-foreground">
         <div className="grid gap-2 py-6">
           {menuItems?.map((menuItem, index) => (
             <Link

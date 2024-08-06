@@ -10,8 +10,8 @@ const fontSans = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Frutero Club Hackathon Starter',
-  description: 'Your starter template to win hackathons',
+  title: 'XocPay',
+  description: 'Recibe, retira y ahorra en pesos o dólares con XocPay',
 }
 
 export default function RootLayout({

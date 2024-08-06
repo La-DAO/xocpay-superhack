@@ -3,14 +3,14 @@ import PageWithNavbar from '@/components/layout/page'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
-export default function HowItWorks() {
+export default function Ahorro() {
   return (
     <PageWithNavbar>
       <div className="page gap-y-8 text-center">
-        <h2>How it works</h2>
+        <h2>Tus cuentas</h2>
         <Link href="/">
           <Button className={`mt-6 h-12 text-lg md:mt-8 lg:mt-8 xl:mt-12`}>
-            Back
+            Ir a Inicio
           </Button>
         </Link>
       </div>
