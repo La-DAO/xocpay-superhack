@@ -13,7 +13,7 @@ export default function AuthButton({ size }: AuthButtonProps) {
   }
 
   return (
-    <Button onClick={onClickHandler} size={size}>
+    <Button onClick={onClickHandler} size={size} className="font-medium">
       Login
     </Button>
   )
