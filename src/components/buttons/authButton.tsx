@@ -9,7 +9,6 @@ import { thirdwebClient } from '@/providers/Thirdweb';
 import { DEFAULT_CHAIN, SUPPORTED_CHAINS } from '@/constants/Chain';
 
 import { useEffect, useState } from 'react';
-import { useAccount, useConnect, useDisconnect } from 'wagmi'
 
 const walletsSetup = [
   createWallet("com.coinbase.wallet", {
@@ -47,7 +46,6 @@ export default function AuthButton({
   size,
 }: AuthButtonProps) {
 
-  const { address, isConnected, connector } = useAccount();
   const [clientOnly, setClientOnly] = useState(false);
 
   useEffect(() => {
@@ -72,12 +70,6 @@ export default function AuthButton({
     {/* <Button onClick={onClickHandler} size={size} className="font-medium">
       {textButton}
     </Button> */}
-
-    { clientOnly &&isConnected && address && (
-      <div>
-        <p>{address}</p>
-      </div>
-    )}
 
     <ConnectButton
       client={thirdwebClient}
