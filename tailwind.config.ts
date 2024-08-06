@@ -57,6 +57,10 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        'purple-background': {
+          DEFAULT: 'hsl(var(--purple-background))',
+          foreground: 'hsl(var(--secondary-foreground))',
+        },
       },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
