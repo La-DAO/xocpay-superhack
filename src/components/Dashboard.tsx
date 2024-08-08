@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { CartesianGrid, XAxis, Line, LineChart } from "recharts"
 import { ChartTooltipContent, ChartTooltip, ChartContainer } from "@/components/ui/chart"
 import Link from "next/link"
+import { JSX, ClassAttributes, HTMLAttributes, SVGProps } from "react"
 
 export default function DashBoardComponent() {
   return (
@@ -61,7 +62,7 @@ export default function DashBoardComponent() {
   )
 }
 
-function ArrowRightIcon(props) {
+function ArrowRightIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -82,7 +83,7 @@ function ArrowRightIcon(props) {
 }
 
 
-function LinechartChart(props) {
+function LinechartChart(props: JSX.IntrinsicAttributes & ClassAttributes<HTMLDivElement> & HTMLAttributes<HTMLDivElement>) {
   return (
     <div {...props}>
       <ChartContainer
