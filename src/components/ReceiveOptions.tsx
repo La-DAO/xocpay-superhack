@@ -17,10 +17,12 @@ export default function ReceiveOptionsComponent() {
               </Button>
             </Link>
 
-            <Button variant="outline" className="w-full text-lg py-10">
-              Enviar solicitud a usuario XocPay
-            </Button>
-
+            <Link href="/requestPaymentSearch">
+              <Button variant="outline" className="w-full text-lg py-10">
+                Enviar solicitud a usuario XocPay
+              </Button>
+            </Link>
+            
             <Link href="/paymentLink">
               <Button variant="outline" className="w-full text-lg py-10">
                 Crear liga de pago
