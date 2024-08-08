@@ -25,14 +25,10 @@ const wallets = [
   inAppWallet({
     auth: {
       options: [
-        // "email",
         "google",
         "farcaster",
         "passkey",
         "phone"
-        // "apple",
-        // "facebook",
-        // "phone",
       ],
     },
   }),
