@@ -4,11 +4,12 @@ import { CartesianGrid, XAxis, Line, LineChart } from "recharts"
 import { ChartTooltipContent, ChartTooltip, ChartContainer } from "@/components/ui/chart"
 import Link from "next/link"
 import { JSX, ClassAttributes, HTMLAttributes, SVGProps } from "react"
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card"
 
 export default function DashBoardComponent() {
   return (
-    <div className="flex justify-center">
-      <div className="flex flex-col items-center p-4 space-y-4 md:w-[400px] my-4 md:my-16 lg:my-24 border rounded-lg">
+    <div className="flex items-center justify-center my-4 md:my-16 lg:my-24 m-1">
+      <Card className="flex flex-col items-center space-y-4 md:w-[400px] my-4 md:my-16 lg:my-24 border rounded-lg py-12 px-8">
 
         
         <div className="text-center">
@@ -16,7 +17,7 @@ export default function DashBoardComponent() {
             <p className="text-lg">MXN</p>
         </div>        
 
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 py-4">
           <Button variant="default">Enviar</Button>
 
           <Link href="/recibe">
@@ -25,7 +26,7 @@ export default function DashBoardComponent() {
           
         </div>
 
-        <div className="w-full">
+        <div className="w-full bg-white p-4">
           <LinechartChart className="w-full aspect-[4/3]" />
         </div>
 
@@ -57,7 +58,7 @@ export default function DashBoardComponent() {
 
         </div>
         
-      </div>
+      </Card>
     </div>
   )
 }
