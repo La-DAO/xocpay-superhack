@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { CartesianGrid, XAxis, Line, LineChart } from "recharts"
 import { ChartTooltipContent, ChartTooltip, ChartContainer } from "@/components/ui/chart"
+import Link from "next/link"
 
 export default function DashBoardComponent() {
   return (
@@ -16,7 +17,11 @@ export default function DashBoardComponent() {
 
         <div className="flex space-x-4">
           <Button variant="default">Enviar</Button>
-          <Button variant="default">Recibir</Button>
+
+          <Link href="/recibe">
+            <Button variant="default">Recibir</Button>
+          </Link>
+          
         </div>
 
         <div className="w-full">
