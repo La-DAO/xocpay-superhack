@@ -5,6 +5,7 @@ import Link from 'next/link'
 import MobileMenu from './mobileMenu'
 import { usePathname } from 'next/navigation'
 import AuthButton from '@/components/buttons/authButton'
+import { useConnectedWallets } from "thirdweb/react";
 
 export type MenuItemType = {
   displayText: string
@@ -21,6 +22,7 @@ const MENU_ITEMS: MenuItemType[] = [
 
 export default function Navbar() {
   const pathname = usePathname()
+  const wallets = useConnectedWallets();
 
   return (
     <header className="sticky top-0 h-22 w-full bg-secondary">
@@ -39,7 +41,8 @@ export default function Navbar() {
         </div>
         <div className="z-10 col-span-3 flex items-center justify-center">
           <nav className="hidden gap-6 lg:flex">
-            {MENU_ITEMS.filter((menuItem) => !menuItem.isMobileOnly).map(
+          { wallets.length > 0 && (
+            MENU_ITEMS.filter((menuItem) => !menuItem.isMobileOnly).map(
               (menuItem, index) => (
                 <Link
                   key={`${menuItem.displayText}-menuItem-${index}`}
@@ -52,13 +55,16 @@ export default function Navbar() {
                   {menuItem.displayText}
                 </Link>
               ),
-            )}
+            )
+          )}
           </nav>
         </div>
         <div className="hidden lg:flex lg:justify-end">
           <AuthButton />
         </div>
+        { wallets.length > 0 && (
         <MobileMenu menuItems={MENU_ITEMS} pathname={pathname} />
+        )}
       </div>
     </header>
   )
