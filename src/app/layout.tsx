@@ -34,16 +34,16 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        {/* <Wagmi>
-          <OnchainKitProvider
+        <Wagmi>
+          {/* <OnchainKitProvider
             chain={baseSepolia}
             apiKey={process.env.NEXT_PUBLIC_ONCHAINKIT_API_KEY}
           > */}
             <Thirdweb>
               {children}
             </Thirdweb>            
-          {/* </OnchainKitProvider>
-        </Wagmi> */}
+          {/* </OnchainKitProvider>  */}
+        </Wagmi>
         <Toaster richColors />
       </body>
     </html>

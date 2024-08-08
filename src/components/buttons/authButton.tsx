@@ -25,15 +25,18 @@ const wallets = [
   inAppWallet({
     auth: {
       options: [
-        "email",
+        // "email",
         "google",
-        "apple",
-        "facebook",
-        "phone",
+        "farcaster",
+        "passkey",
+        "phone"
+        // "apple",
+        // "facebook",
+        // "phone",
       ],
     },
   }),
-  createWallet("me.rainbow"),
+  // createWallet("me.rainbow"),
 ];
 
 type AuthButtonProps = {
@@ -73,7 +76,7 @@ export default function AuthButton({
 
     <ConnectButton
       client={thirdwebClient}
-      wallets={walletsSetup}
+      wallets={wallets}
       theme={"light"}
       connectButton={{ 
         label: "Entrar",
