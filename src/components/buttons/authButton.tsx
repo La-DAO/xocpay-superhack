@@ -91,6 +91,15 @@ export default function AuthButton({
       connectModal={{
         size: "wide",
         title: "XocPay",
+        titleIcon:
+          "https://bafybeia7qsejw7nwyghlbgjna5eopov72l5liottrxh7gkob2yysmhwdny.ipfs.w3s.link/cocoa-bean-256px.png",
+        welcomeScreen: {
+          img: {
+            src: "https://bafybeia7qsejw7nwyghlbgjna5eopov72l5liottrxh7gkob2yysmhwdny.ipfs.w3s.link/cocoa-bean-256px.png",
+            width: 150,
+            height: 150,
+          },
+        },
         showThirdwebBranding: false,
       }}
       chain={DEFAULT_CHAIN}
