@@ -4,6 +4,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function ReceiveComponent() {
   return (
@@ -48,7 +49,9 @@ export default function ReceiveComponent() {
           </div>
         </CardContent>
         <CardFooter className="flex justify-center">
+          <Link href="/receiveOptions">
           <Button className="bg-orange-500 text-white">Siguiente</Button>
+          </Link>
         </CardFooter>
       </Card>
     </div>
