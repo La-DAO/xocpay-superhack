@@ -4,6 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@/components/ui/table"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function NotificationsComponent() {
     return (
@@ -33,34 +34,40 @@ export default function NotificationsComponent() {
                                         <TableCell>@usuario1</TableCell>
                                         <TableCell>$420.69 USD</TableCell>
                                         <TableCell>
-                                            <Button variant="outline" onClick={() => (window.location.href = "/new-page")}>
-                                                Pendiente
-                                            </Button>
+                                            <Link href="/paymentReceived">
+                                                <Button variant="outline">
+                                                    Pendiente
+                                                </Button>
+                                            </Link>
                                         </TableCell>
                                     </TableRow>
                                     <TableRow>
                                         <TableCell>@usuario2</TableCell>
                                         <TableCell>$223 USD</TableCell>
                                         <TableCell>
-                                            <Button variant="outline" onClick={() => (window.location.href = "/new-page")}>
-                                                Débito
-                                            </Button>
+                                            <Link href="/paymentReceived">
+                                            <Button variant="outline">
+                                                    Débito
+                                                </Button>
+                                            </Link>
                                         </TableCell>
                                     </TableRow>
                                     <TableRow>
                                         <TableCell>@usuario3</TableCell>
                                         <TableCell>$169 USD</TableCell>
                                         <TableCell>
-                                            <Button variant="outline" onClick={() => (window.location.href = "/new-page")}>
-                                                Ahorro
-                                            </Button>
+                                            <Link href="/paymentReceived">
+                                            <Button variant="outline">
+                                                    Ahorro
+                                                </Button>
+                                            </Link>
                                         </TableCell>
                                     </TableRow>
                                     <TableRow>
                                         <TableCell>@usuario1</TableCell>
                                         <TableCell>$50 USD</TableCell>
                                         <TableCell>
-                                            <Button variant="outline" onClick={() => (window.location.href = "/new-page")}>
+                                            <Button variant="outline">
                                                 Pendiente
                                             </Button>
                                         </TableCell>
@@ -69,7 +76,7 @@ export default function NotificationsComponent() {
                                         <TableCell>@usuario2</TableCell>
                                         <TableCell>$1000 USD</TableCell>
                                         <TableCell>
-                                            <Button variant="outline" onClick={() => (window.location.href = "/new-page")}>
+                                            <Button variant="outline">
                                                 Bancaria
                                             </Button>
                                         </TableCell>
@@ -78,7 +85,7 @@ export default function NotificationsComponent() {
                                         <TableCell>@usuario3</TableCell>
                                         <TableCell>$20 USD</TableCell>
                                         <TableCell>
-                                            <Button variant="outline" onClick={() => (window.location.href = "/new-page")}>
+                                            <Button variant="outline">
                                                 Inversión
                                             </Button>
                                         </TableCell>
@@ -87,7 +94,7 @@ export default function NotificationsComponent() {
                                         <TableCell>@usuario1</TableCell>
                                         <TableCell>$33 USD</TableCell>
                                         <TableCell>
-                                            <Button variant="outline" onClick={() => (window.location.href = "/new-page")}>
+                                            <Button variant="outline">
                                                 Pendiente
                                             </Button>
                                         </TableCell>
@@ -96,7 +103,7 @@ export default function NotificationsComponent() {
                                         <TableCell>@usuario2</TableCell>
                                         <TableCell>$10 USD</TableCell>
                                         <TableCell>
-                                            <Button variant="outline" onClick={() => (window.location.href = "/new-page")}>
+                                            <Button variant="outline">
                                                 Inversión
                                             </Button>
                                         </TableCell>
@@ -105,7 +112,7 @@ export default function NotificationsComponent() {
                                         <TableCell>@usuario3</TableCell>
                                         <TableCell>$25 USD</TableCell>
                                         <TableCell>
-                                            <Button variant="outline" onClick={() => (window.location.href = "/new-page")}>
+                                            <Button variant="outline">
                                                 Inversión
                                             </Button>
                                         </TableCell>
