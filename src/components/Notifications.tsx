@@ -9,11 +9,11 @@ import Link from "next/link"
 export default function NotificationsComponent() {
     return (
         <div className="flex items-center justify-center my-4 md:my-16 lg:my-24 m-1">
-            <Card className="w-screen max-w-2xl p-8">
+            <Card className="w-screen max-w-2xl lg:p-8">
                 <CardHeader>
                     <CardTitle className="text-center text-2xl font-bold">Notificaciones</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="p-2 md:p-6">
                     <Tabs defaultValue="recibidos">
                         <TabsList className="flex justify-center space-x-4">
                             <TabsTrigger value="recibidos">Pagos recibidos</TabsTrigger>
