@@ -34,7 +34,8 @@
     "tailwindcss-animate": "^1.0.7",
     "thirdweb": "^5.44.0",
     "viem": "^2.17.10",
-    "wagmi": "^2.12.2"
+    "wagmi": "^2.12.2",
+    "@worldcoin/idkit": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "^20",
