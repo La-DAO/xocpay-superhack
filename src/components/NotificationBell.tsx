@@ -17,7 +17,7 @@ export default function NotificationBellComponent() {
           <DropdownMenuItem>
             <div className="grid gap-2">
               <div className="grid gap-1">
-                <div className="text-sm font-medium">New message from John</div>
+                <div className="text-sm font-medium">Your receive $600 from @mel</div>
                 <div className="text-xs text-muted-foreground">2 hours ago</div>
               </div>
             </div>
@@ -25,7 +25,7 @@ export default function NotificationBellComponent() {
           <DropdownMenuItem>
             <div className="grid gap-2">
               <div className="grid gap-1">
-                <div className="text-sm font-medium">Your order is shipped</div>
+                <div className="text-sm font-medium">Your receive $400 from @Tomas</div>
                 <div className="text-xs text-muted-foreground">3 hours ago</div>
               </div>
             </div>
