@@ -7,6 +7,8 @@ import { usePathname } from 'next/navigation'
 import AuthButton from '@/components/buttons/authButton'
 import { useConnectedWallets } from "thirdweb/react";
 import NotificationBellComponent from '@/components/NotificationBell'
+import { Button } from '@/components/ui/button'
+import WorldIdButtonComponent from '@/components/WorldIdButton'
 
 export type MenuItemType = {
   displayText: string
@@ -27,8 +29,9 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 h-22 w-full bg-secondary">
-      <div className="mx-auto flex h-full w-full max-w-3xl items-center justify-between p-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-5 lg:px-8">
-        <div>
+      <div className="mx-auto flex h-full w-full max-w-3xl items-center justify-between p-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-6 lg:px-8">
+        
+        <div className="flex">
           <Link className="flex w-16 items-center" href="/">
             <Image
               src="/images/logos/la-cartera-logo.png"
@@ -40,6 +43,8 @@ export default function Navbar() {
             <span className="sr-only">XocPay</span>
           </Link>
         </div>
+
+
         <div className="z-10 col-span-3 flex items-center justify-center">
           <nav className="hidden gap-6 lg:flex">
           { wallets.length > 0 && (
@@ -61,10 +66,15 @@ export default function Navbar() {
           </nav>
         </div>
 
-        <div className="hidden lg:flex lg:justify-end w-[230px]">
+        <div className="hidden lg:flex lg:justify-end w-[330px]">
+
 
         { wallets.length > 0 && (
-                 <NotificationBellComponent />
+          <WorldIdButtonComponent />
+        )}
+
+        { wallets.length > 0 && (
+            <NotificationBellComponent />
         )}
 
           <AuthButton />
@@ -80,4 +90,3 @@ export default function Navbar() {
     </header>
   )
 }
-

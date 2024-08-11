@@ -10,7 +10,6 @@ export default function DashBoardComponent() {
   return (
     <div className="flex items-center justify-center my-4 md:my-16 lg:my-24 m-1">
       <Card className="flex flex-col items-center space-y-4 md:w-[400px] my-4 md:my-16 lg:my-24 border rounded-lg py-12 px-8">
-
         
         <div className="text-center">
             <h1 className="text-4xl font-bold">$69,420.22</h1>
